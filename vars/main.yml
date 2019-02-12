@@ -1,0 +1,6 @@
+---
+homeDir: /home/jforero
+appDir : app
+repo: node-js-sample
+account: juanforo
+privateKey: /home/jforero/.ssh/id_rsa

@@ -1,12 +1,8 @@
 - hosts: 127.0.0.1
   connection: local
 
-  vars:
-    - homeDir: /home/jforero
-    - appDir : app
-    - repo: node-js-sample
-    - account: juanforo
-    - privateKey: /home/jforero/.ssh/id_rsa
+  vars_files:
+  - vars/main.yml
 
   tasks:
   - name: Install Packages
@@ -16,9 +12,6 @@
       - npm
       - node
       - git
-      - mcrypt
-      - nginx
-      - curl
 
   - name: Install pm2
     become: true
